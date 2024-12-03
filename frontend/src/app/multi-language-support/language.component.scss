@@ -1,0 +1,36 @@
+.language-container {
+  text-align: center;
+  padding: 20px;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .language-selection {
+    margin-bottom: 20px;
+
+    label {
+      margin-right: 10px;
+    }
+
+    select {
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
