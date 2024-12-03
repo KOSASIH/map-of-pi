@@ -1,0 +1,18 @@
+<div class="blockchain-verification-container">
+  <h1>Blockchain Transaction Verification</h1>
+  
+  <input 
+    type="text" 
+    [(ngModel)]="transactionId" 
+    placeholder="Enter Transaction ID" 
+    class="transaction-input"
+  />
+  <button (click)="verifyTransaction()" class="verify-button">Verify Transaction</button>
+
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <div *ngIf="transactionDetails" class="transaction-details">
+    <h2>Transaction Details:</h2>
+    <pre>{{ transactionDetails | json }}</pre>
+  </div>
+</div>
