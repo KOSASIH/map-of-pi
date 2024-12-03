@@ -1,0 +1,49 @@
+.payment-container {
+  text-align: center;
+  padding: 20px;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .payment-form, .payment-status {
+    margin-bottom: 20px;
+
+    .payment-input{
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 200px;
+      margin-right: 10px;
+    }
+
+    .initiate-button, .status-button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #218838;
+      }
+    }
+
+    .success-message {
+      color: #28a745;
+      margin-top: 10px;
+    }
+
+    .error-message {
+      color: #dc3545;
+      margin-top: 10px;
+    }
+
+    .status-message {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  }
+}
