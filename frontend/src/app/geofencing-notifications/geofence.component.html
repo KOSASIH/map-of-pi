@@ -1,0 +1,31 @@
+<div class="geofence-container">
+  <h1>Geofencing Notifications</h1>
+
+  <div class="geofence-form">
+    <input 
+      type="text" 
+      [(ngModel)]="geofenceName" 
+      placeholder="Geofence Name" 
+      class="geofence-input"
+    />
+    <input 
+      type="text" 
+      [(ngModel)]="geofenceCoordinates" 
+      placeholder="Coordinates (lat,long)" 
+      class="geofence-input"
+    />
+    <button (click)="createGeofence()" class="create-button">Create Geofence</button>
+    <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  </div>
+
+  <div class="geofence-list">
+    <h2>Existing Geofences:</h2>
+    <ul>
+      <li *ngFor="let geofence of geofences">
+        <h3>{{ geofence.name }}</h3>
+        <p><strong>Coordinates:</strong> {{ geofence.coordinates.join(', ') }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
