@@ -1,0 +1,14 @@
+<div class="recommendation-container">
+  <h1>AI-Powered Recommendations</h1>
+  
+  <div class="recommendations-list">
+    <h2>Your Recommendations:</h2>
+    <ul>
+      <li *ngFor="let recommendation of recommendations">
+        <h3>{{ recommendation.title }}</h3>
+        <p>{{ recommendation.description }}</p>
+        <p><strong>Category:</strong> {{ recommendation.category }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
