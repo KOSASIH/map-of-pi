@@ -1,0 +1,27 @@
+<div class="payment-container">
+  <h1>Payment Integration</h1>
+
+  <div class="payment-form">
+    <input 
+      type="number" 
+      [(ngModel)]="amount" 
+      placeholder="Enter amount" 
+      class="payment-input"
+    />
+    <button (click)="initiatePayment()" class="initiate-button">Initiate Payment</button>
+    <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  </div>
+
+  <div class="payment-status">
+    <h2>Check Payment Status</h2>
+    <input 
+      type="text" 
+      [(ngModel)]="paymentId" 
+      placeholder="Enter payment ID" 
+      class="payment-input"
+    />
+    <button (click)="checkPaymentStatus()" class="status-button">Check Status</button>
+    <div *ngIf="paymentStatus" class="status-message">Payment Status: {{ paymentStatus }}</div>
+  </div>
+</div>
