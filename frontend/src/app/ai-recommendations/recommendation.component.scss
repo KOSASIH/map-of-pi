@@ -1,0 +1,38 @@
+.recommendation-container {
+  text-align: center;
+  padding: 20px;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .recommendations-list {
+    margin-top: 20px;
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        padding: 15px;
+        border: 1px solid #ddd;
+        margin: 10px 0;
+        border-radius: 5px;
+
+        h3 {
+          margin: 0;
+          font-size: 1.2em;
+        }
+
+        p {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+}
