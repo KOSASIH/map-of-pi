@@ -1,0 +1,81 @@
+.feedback-container {
+  text-align: centerpadding: 20px;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .feedback-form {
+    margin-bottom: 20px;
+
+    .feedback-textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .rating {
+      margin-bottom: 10px;
+
+      label {
+        margin-right: 10px;
+      }
+
+      .rating-select {
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+    }
+
+    .submit-button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #218838;
+      }
+    }
+
+    .success-message {
+      color: green;
+      margin-top: 10px;
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 10px;
+    }
+  }
+
+  .feedback-list {
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: #f9f9f9;
+
+        p {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+}
