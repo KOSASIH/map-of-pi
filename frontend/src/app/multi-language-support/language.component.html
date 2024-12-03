@@ -1,0 +1,12 @@
+<div class="language-container">
+  <h1>{{ welcomeMessage }}</h1>
+
+  <div class="language-selection">
+    <label for="language-select">{{ languageService.getTranslation('selectLanguage') }}</label>
+    <select id="language-select" [(ngModel)]="selectedLanguage" (change)="changeLanguage(selectedLanguage)">
+      <option *ngFor="let lang of languages" [value]="lang">{{ lang }}</option>
+    </select>
+  </div>
+
+  <button (click)="changeLanguage(selectedLanguage)">{{ languageService.getTranslation('submit') }}</button>
+</div>
