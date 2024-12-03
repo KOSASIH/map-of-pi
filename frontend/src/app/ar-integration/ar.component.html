@@ -1,0 +1,13 @@
+<div class="ar-container">
+  <h1>Augmented Reality Business Locator</h1>
+  <button (click)="initializeAR()">Start AR Experience</button>
+  
+  <div class="locations-list">
+    <h2>Nearby Businesses:</h2>
+    <ul>
+      <li *ngFor="let location of locations">
+        {{ location.name }} - {{ location.address }}
+      </li>
+    </ul>
+  </div>
+</div>
