@@ -1,0 +1,27 @@
+<div class="loyalty-container">
+  <h1>Loyalty Programs and Rewards</h1>
+
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <div class="rewards-section">
+    <h2>Your Rewards:</h2>
+    <ul>
+      <li *ngFor="let reward of rewards">
+        <h3>{{ reward.title }}</h3>
+        <p>{{ reward.description }}</p>
+        <p><strong>Points:</strong> {{ reward.points }}</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="programs-section">
+    <h2>Available Loyalty Programs:</h2>
+    <ul>
+      <li *ngFor="let program of programs">
+        <h3>{{ program.name }}</h3>
+        <p>{{ program.description }}</p>
+        <p><strong>Benefits:</strong> {{ program.benefits }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
