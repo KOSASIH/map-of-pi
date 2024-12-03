@@ -1,0 +1,45 @@
+.loyalty-container {
+  text-align: center;
+  padding: 20px;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .rewards-section, .programs-section {
+    margin-top: 20px;
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        padding: 15px;
+        border: 1px solid # ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: #f9f9f9;
+
+        h3 {
+          margin: 0;
+          font-size: 1.2em;
+        }
+
+        p {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+
+  .error-message {
+    color: red;
+    margin-top: 20px;
+  }
+}
