@@ -1,0 +1,18 @@
+<div class="tracking-container">
+  <h1>Real-Time Payment Tracking</h1>
+  
+  <input 
+    type="text" 
+    [(ngModel)]="paymentId" 
+    placeholder="Enter Payment ID" 
+    class="payment-input"
+  />
+  <button (click)="checkPaymentStatus()" class="check-button">Check Status</button>
+
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <div *ngIf="paymentStatus" class="payment-status">
+    <h2>Payment Status:</h2>
+    <pre>{{ paymentStatus | json }}</pre>
+  </div>
+</div>
