@@ -1,0 +1,36 @@
+<div class="feedback-container">
+  <h1>Community Feedback and Rating System</h1>
+
+  <div class="feedback-form">
+    <textarea 
+      [(ngModel)]="feedbackText" 
+      placeholder="Enter your feedback here..." 
+      rows="4" 
+      class="feedback-textarea"
+    ></textarea>
+    <div class="rating">
+      <label for="rating">Rating:</label>
+      <select [(ngModel)]="feedbackRating" id="rating" class="rating-select">
+        <option value="0">Select Rating</option>
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select>
+    </div>
+    <button (click)="submitFeedback()" class="submit-button">Submit Feedback</button>
+    <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  </div>
+
+  <div class="feedback-list">
+    <h2>Existing Feedback:</h2>
+    <ul>
+      <li *ngFor="let feedback of feedbackList">
+        <p><strong>Rating:</strong> {{ feedback.rating }} Stars</p>
+        <p>{{ feedback.text }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
